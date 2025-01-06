@@ -1,7 +1,7 @@
 footer {
-  position: fixed;
+  //position: fixed;
   bottom: 0;
-  width: 100%;
+  //width: 100%;
   padding: 1rem;
   background-color: #f1f1f1;
   color: #666;
@@ -15,5 +15,6 @@ footer {
 
   p {
     text-align: center;
+    font-size: 16px;
   }
 }
