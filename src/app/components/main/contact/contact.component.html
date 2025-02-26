@@ -1,0 +1,22 @@
+<section class="contact-form" id="contact">
+  <div class="title">
+    <h2>Entre em contato</h2>
+  </div>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="name">Nome</label>
+    <input id="name" formControlName="name">
+    <div class="form-row">
+      <div>
+        <label for="email">Email</label>
+        <input id="email" formControlName="email">
+      </div>
+      <div>
+        <label for="phone">Whatsapp</label>
+        <input id="phone" formControlName="phone">
+      </div>
+    </div>
+    <label for="context">Conteudo</label>
+    <textarea id="context" formControlName="context"></textarea>
+    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+  </form>
+</section>
