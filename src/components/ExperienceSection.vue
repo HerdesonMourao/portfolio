@@ -31,12 +31,25 @@
 
       <div class="education">
         <p class="section-label" style="margin-bottom: 1.5rem">// Formação</p>
-        <div class="edu-card">
-          <span class="edu-icon">🎓</span>
-          <div>
-            <p class="edu-title">Curso Técnico em Informática</p>
-            <p class="edu-school">Escola Estadual de Educação Profissional Manoel Mano</p>
-            <p class="edu-period">2016 – 2018</p>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <span class="edu-icon">🎓</span>
+            <div>
+              <p class="edu-title">
+                Bacharelado em Sistemas de Informação
+                <span class="current-badge edu-badge">Cursando</span>
+              </p>
+              <p class="edu-school">Anhanguera Educacional</p>
+              <p class="edu-period">2026 – 2030</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <span class="edu-icon">🎓</span>
+            <div>
+              <p class="edu-title">Curso Técnico em Informática</p>
+              <p class="edu-school">Escola Estadual de Educação Profissional Manoel Mano</p>
+              <p class="edu-period">2016 – 2018</p>
+            </div>
           </div>
         </div>
       </div>
@@ -224,6 +237,13 @@ const experiences = [
   padding-top: 3rem;
 }
 
+.edu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  max-width: 720px;
+}
+
 .edu-card {
   display: flex;
   align-items: flex-start;
@@ -231,7 +251,8 @@ const experiences = [
   padding: 1.5rem;
   background: var(--bg-card);
   border: 1px solid var(--bg-border);
-  max-width: 520px;
+  flex: 1 1 260px;
+  min-width: 260px;
   transition: border-color 0.2s ease;
 }
 .edu-card:hover { border-color: var(--accent); }
@@ -243,6 +264,11 @@ const experiences = [
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
+}
+
+.edu-badge {
+  margin-left: 0.5rem;
+  vertical-align: middle;
 }
 
 .edu-school {
